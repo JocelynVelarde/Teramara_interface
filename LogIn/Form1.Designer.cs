@@ -32,6 +32,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.BtonLogin = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +57,29 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click_1);
             // 
+            // BtonLogin
+            // 
+            this.BtonLogin.AutoRoundedCorners = true;
+            this.BtonLogin.BorderRadius = 27;
+            this.BtonLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtonLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtonLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtonLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtonLogin.FillColor = System.Drawing.Color.Black;
+            this.BtonLogin.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtonLogin.ForeColor = System.Drawing.Color.White;
+            this.BtonLogin.Location = new System.Drawing.Point(738, 474);
+            this.BtonLogin.Name = "BtonLogin";
+            this.BtonLogin.Size = new System.Drawing.Size(225, 56);
+            this.BtonLogin.TabIndex = 1;
+            this.BtonLogin.Text = "LOGIN";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1103, 694);
+            this.Controls.Add(this.BtonLogin);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -75,5 +94,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button BtonLogin;
     }
 }

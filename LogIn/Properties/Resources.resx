@@ -124,4 +124,7 @@
   <data name="Captura de pantalla 2022-09-09 1325001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-09-09 1325001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="whiteTeramago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whiteTeramago.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
