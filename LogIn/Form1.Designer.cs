@@ -5,7 +5,10 @@
         /// <summary>
         ///  Required designer variable.
         /// </summary>
+        
         private System.ComponentModel.IContainer components = null;
+
+        
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -167,9 +170,11 @@
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
             this.textBox1.Location = new System.Drawing.Point(669, 424);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 22);
+            this.textBox1.PlaceholderText = "Usuario";
+            this.textBox1.Size = new System.Drawing.Size(364, 22);
             this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "Usuario";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter_1);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel1
             // 
@@ -194,10 +199,12 @@
             this.textBox2.ForeColor = System.Drawing.Color.Gray;
             this.textBox2.Location = new System.Drawing.Point(669, 481);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(294, 22);
+            this.textBox2.PlaceholderText = "Contraseña";
+            this.textBox2.Size = new System.Drawing.Size(364, 22);
             this.textBox2.TabIndex = 12;
-            this.textBox2.Text = "Contraseña";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // guna2ImageButton1
             // 
