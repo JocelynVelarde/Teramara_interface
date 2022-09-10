@@ -123,7 +123,7 @@
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(588, 275);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(586, 275);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(520, 434);
             this.guna2PictureBox3.TabIndex = 5;

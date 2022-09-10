@@ -50,7 +50,27 @@ namespace LogIn
 
         private void BtonLogin_Click(object sender, EventArgs e)
         {
+            //AGARRAR EL TEXTO DE LAS DOS CAJAS Y GUARDARLO EN DOS VARIABLES
+            var Usuario = textBox1.Text;
+            var Contraseña = textBox2.Text;
 
+            //DEL OBJETO CREATO PARA LA BASE DE DATOS CHECAR SI EL USUARIO EXISTE 
+            using (UserDataContext context = new UserDataContext())
+            {
+                //EL TIPO ANY CHECA QUE EL OBJETO CUMPLA CON LOS REQUISITOS PARA AMBAS VARIABLES USANDO LA EXPRESION LAMBDA
+                bool usuarioEncontrado = context.Users.Any(user => user.Usuario == Usuario && user.Contraseña == Contraseña);
+
+                //SI EL USUARIO ES ENCONTRADO DA EL ACCESO, ELSE SALE UN DIALOG BOX
+                if (usuarioEncontrado)
+                {
+                    GrantAccess();
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario no encontrado");
+                }
+            }
         }
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
@@ -113,6 +133,13 @@ namespace LogIn
         {
             textBox1.BackColor = System.Drawing.Color.LightGray;
             textBox1.ForeColor = System.Drawing.Color.Black;
+        }
+
+        //METODO PARA DAR EL ACCESO A LA INTERFAZ
+        public void GrantAccess()
+        {
+            Form2 main = new Form2();
+            main.Show();
         }
     }
 }
