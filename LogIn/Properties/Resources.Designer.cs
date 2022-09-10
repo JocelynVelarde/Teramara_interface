@@ -93,6 +93,26 @@ namespace LogIn.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kindpng_1857125 {
+            get {
+                object obj = ResourceManager.GetObject("kindpng_1857125", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_8 {
+            get {
+                object obj = ResourceManager.GetObject("minimize-8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap textTeramago {
             get {
                 object obj = ResourceManager.GetObject("textTeramago", resourceCulture);

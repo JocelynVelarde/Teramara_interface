@@ -56,5 +56,22 @@ namespace LogIn
         {
 
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            if(WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+            else if(WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
     }
 }

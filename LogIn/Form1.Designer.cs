@@ -43,6 +43,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,6 +59,7 @@
             // 
             // guna2ShadowForm1
             // 
+            this.guna2ShadowForm1.BorderRadius = 14;
             this.guna2ShadowForm1.TargetForm = this;
             // 
             // guna2PictureBox1
@@ -76,6 +79,7 @@
             // BtonLogin
             // 
             this.BtonLogin.AutoRoundedCorners = true;
+            this.BtonLogin.BackColor = System.Drawing.Color.White;
             this.BtonLogin.BorderRadius = 27;
             this.BtonLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtonLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -195,6 +199,40 @@
             this.textBox2.Text = "Contraseña";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(110)))), ((int)(((byte)(58)))));
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = global::LogIn.Properties.Resources.minimize_8;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton1.IndicateFocus = true;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1019, 8);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(25, 27);
+            this.guna2ImageButton1.TabIndex = 13;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(110)))), ((int)(((byte)(58)))));
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Image = global::LogIn.Properties.Resources.kindpng_1857125;
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton2.IndicateFocus = true;
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1067, 8);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(24, 18);
+            this.guna2ImageButton2.TabIndex = 14;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -202,6 +240,8 @@
             this.BackgroundImage = global::LogIn.Properties.Resources.Captura_de_pantalla_2022_09_09_183409;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1103, 694);
+            this.Controls.Add(this.guna2ImageButton2);
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -245,5 +285,7 @@
         private Panel panel1;
         private TextBox textBox2;
         private Panel panel2;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
     }
 }
